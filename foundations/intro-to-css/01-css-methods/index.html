@@ -5,10 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Methods for Adding CSS</title>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- INTERNAL STYLE -->
+    <style> /* better place it within the head, to ensure it can be loaded BEFORE the content is rendered */
+      
+      p:nth-child(2){
+        color: rgb(255, 249, 193);
+        font-family: 'Oxanium', sans-serif;
+        font-weight: 600;
+        margin-bottom: 40px;
+
+/*      Useful
+        https://cssgradient.io/ */
+
+/*         background: linear-gradient(90deg, rgba(2,0,36,0) 7%, rgb(255, 121, 121) 43%, rgb(255, 121, 121) 52%, rgba(0,212,255,0) 93%);  */
+        background: linear-gradient(90deg, rgb(255, 121, 121) 3%,rgba(0,212,255,0) 43%,rgba(0,212,255,0) 53%, rgb(255, 121, 121) 102%);
+      }
+    </style>
   </head>
+
+
   <body>
-    <div>Style me via the external method!</div>
-    <p>I would like to be styled with the internal method, please.</p>
-    <button>Inline Method</button>
+    <div id="messages">
+      <div id="external">
+        <p>Style me via the external method!</p>
+      </div>
+      <p>I would like to be styled with the internal method, please.</p>
+<!-- Button not clickable, should add :hover and :active -->
+
+      <button style="
+      color: white; 
+      width: 200px; 
+      height: 50px; 
+      border: 2px double transparent;
+      background-image: linear-gradient(#50559edc,#161a52), radial-gradient(circle at left top, rgb(116, 185, 255), rgb(217, 0, 192));
+      background-origin: border-box; 
+      background-clip: padding-box, 
+      border-box;border-radius: 10px;
+      font-family: 'Roboto';
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.8px;">Inline Method</button>
+  </div>
   </body>
 </html>
