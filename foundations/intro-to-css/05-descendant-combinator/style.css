@@ -1,0 +1,15 @@
+body, html{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container .text{
+    background-color:  aqua;
+    color: darkblue;
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    padding: 10px;
+} 
