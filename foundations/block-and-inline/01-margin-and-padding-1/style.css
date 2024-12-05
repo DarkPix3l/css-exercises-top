@@ -1,28 +1,38 @@
 body {
   max-width: 600px;
   margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
 }
 
 .one {
   background: pink;
   border: 3px solid blue;
-  /* CHANGE ME */
-  padding: 0px;
-  margin: 0px;
+  /* CHANGED */
+  padding: 32px;
+  margin: 12px;
 }
 
 .two {
   background: lightblue;
   border: 3px solid purple;
-  /* CHANGE ME */
-  margin-bottom: 0px;
+  /* CHANGED */
+  margin-bottom: 48px;
 }
+
+/* Without having the possibility of using float right or flexbox, my first approach was to manually calculating the margin.
+600px - 200px - 64px - 6px = 330px. 
+This works but is it's more complex and less flexible.
+I've compare it with the solution that uses a margin-left: auto;
+trick. This is a cleaner, simpler solution that will work even if the sizes of the other elements change.
+*/
 
 .three {
   background: peachpuff;
   border: 3px solid brown;
   width: 200px;
-  /* CHANGE ME */
-  padding: 0px;
-  margin-left: 0px;
+  /* CHANGED */
+  padding: 32px;
+  /* margin-left: 330px; */
+  margin-left: auto;
 }
