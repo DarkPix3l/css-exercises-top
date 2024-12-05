@@ -1,1 +1,11 @@
-/* Add CSS Styling */
+.avatar.proportioned{
+    width: 300px;
+    /* No need to set the height here; the proportion is maintained. 
+    The property is omitted as the browser will naturally maintain the image's 1:1 aspect ratio. */
+
+}
+
+.avatar.distorted{
+    width: 200px;
+    height: 400px;
+}
