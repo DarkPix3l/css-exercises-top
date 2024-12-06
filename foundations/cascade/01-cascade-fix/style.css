@@ -2,6 +2,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.para {
+  font-size: 22px;
+}
+
 .para,
 .small-para {
   color: hsl(0, 0%, 0%);
@@ -13,8 +17,10 @@ body {
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
 }
 
 .confirm {
@@ -23,10 +29,10 @@ body {
   font-weight: bold;
 } 
 
-.button {
-  background-color: rgb(255, 255, 255);
+.text {
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 100;
 }
 
 .child {
@@ -35,8 +41,21 @@ body {
   font-size: 14px;
 }
 
-div.text {
-  color: rgb(0, 0, 0);
-  font-size: 22px;
-  font-weight: 100;
-}
+/* 
+1. moved ".para" to the top: 
+
+  when multiple classes are applied to an element, the later rule in the stylesheet wins. In this case better define para before and then target ".small-para" later to overwrite the inheritance of the font-size property.
+
+
+2.Moved "button" on top of ".confirm":
+
+  the class selector it is stronger than the type selector.
+
+
+3.Moved .child to the bottom and deleted .div:
+
+  Inheritance of the proprety "font-size" and font weight. Because of order and specificity we move ".child after" and we delete the type selector "div" that targets all the div element with the class "text", children included.
+
+
+
+*/
