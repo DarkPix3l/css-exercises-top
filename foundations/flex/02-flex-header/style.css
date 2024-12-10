@@ -1,25 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .header  {
-  font-family: monospace;
-  background: papayawhip;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(140, 0, 255);
+  box-shadow: 0px -10px 9px rgb(182, 93, 255) inset;
+  display: flex;
+  align-items: center;
+  padding: 20px;
 }
 
 .logo {
+  font-family: "Silkscreen", sans-serif;
   font-size: 48px;
   font-weight: 900;
-  color: tomato;
-  background: white;
+  color: #ff4747;
+  background: rgb(255, 255, 255);
+  /*  box-shadow: inset 5px 5px 3px rgb(255, 217, 0), -5px -5px 3px rgb(255, 255, 255); */
+  box-shadow: inset 5px 5px 3px rgb(255, 217, 0), -5px -5px orangered, -10px -10px rgb(255, 170, 139);
   padding: 4px 32px;
+  border-radius: 5px;
+  border: 1px rgb(48, 48, 48) solid;
 }
+
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  gap: 20px;
+ 
 }
 
 a {
+  font-family: "Genos", sans-serif;
+  font-weight: 500;
   font-size: 22px;
-  background: white;
+  background: rgb(255, 153, 1);
+  box-shadow: 5px 5px 3px rgb(255, 217, 0) inset;
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
+  border-radius: 5px;
+  border: 1px rgb(48, 48, 48) solid;
+}
+
+.left-links{
+  flex-grow: 1;
+  justify-items: flex-start;
+
+}
+
+.right-links{
+  flex-grow: 1;
+  justify-items: flex-end;
 }
