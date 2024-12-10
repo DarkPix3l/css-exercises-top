@@ -9,6 +9,7 @@
   box-shadow: 0px -10px 9px rgb(182, 93, 255) inset;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 20px;
 }
 
@@ -45,15 +46,4 @@ a {
   text-decoration: none;
   border-radius: 5px;
   border: 1px rgb(48, 48, 48) solid;
-}
-
-.left-links{
-  flex-grow: 1;
-  justify-items: flex-start;
-
-}
-
-.right-links{
-  flex-grow: 1;
-  justify-items: flex-end;
 }
